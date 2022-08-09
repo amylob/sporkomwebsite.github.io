@@ -1,0 +1,657 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".navbar").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	</script>
+	<!----webfonts---->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+	<!----//webfonts---->
+	<!----start-top-nav-script---->
+	<script>
+		$(function () {
+			var pull = $('#pull');
+			menu = $('nav ul');
+			menuHeight = menu.height();
+			$(pull).on('click', function (e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function () {
+				var w = $(window).width();
+				if (w > 320 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+		});
+	</script>
+	<!----//End-top-nav-script---->
+</head>
+
+<body>
+	<!-----start-container----->
+	<!-----header-section------>
+	<!----- start-header---->
+
+	<!----- //End-header---->
+	<!----- start-slider---->
+	<!----start-slider-script---->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	
+
+
+	<!----//End-slider-script---->
+	<!-- Slideshow 4 -->
+	<div class="listesection">
+		<div class="listheader">
+			<div class="tophead">
+				<div class="topnav" id="myTopnav">
+					<a class="nav-logo" href="index.html">SPORKOM</a>
+
+					<a href="contact.html">Contacter Nous</a>
+					<a href="equipe.html">L'équipe</a>
+
+					<div class="drop">
+					  <button class="dropbtn">Esprit Sporkom 
+						<i class="fa fa-caret-down"></i>
+					  </button>
+
+					  <div class="dropdown-content">
+						<a href="featurespage.html">Fonctionnalités</a>
+						<a href="users.html">Utilisateurs</a>
+						<a href="community.html">Communauté</a>
+						<a href="sports.html">Liste des sports</a>
+						<a href="signup.html">S'inscrire ou créer un compte</a>
+						<a href="featured.html">Ils parlent de nous</a>
+						<a href="#footer">Aides et accompagenements
+						</a>
+
+						</div>
+					</div>
+					<a href="index.html">Acceuil</a>
+
+					<a href="javascript:void(0);" style="font-size:15px;" class="icon"
+						onclick="myFunction()">&#9776;</a>
+				</div>
+				<div class="listheader-title">
+					<h2>Fonctionnalités</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the first is simply dummy text of the printing and typesetting industry</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="rrow">
+					<div class="column" >
+						<div class="sectiontext">
+							<h2 style="color: #f5f5f5; font-size: 20px; font-family:'Poppins';  ">SPORKOM</h2>
+						<h1 class="titlee">TELECHARGER NOTRE APPLICATION MAINTENANT </h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+					</div>
+					  <div class="big-btns">
+						
+						<button class="dw"> <i class="fa-brands fa-apple"></i> Available On App Store</button>
+						<button class="dw"> <i class="fa-brands fa-google-play"></i> Get It On Google Play</button>
+						<button class="dw"> <i class="fa-brands fa-windows"></i> Download For Windows</button>
+
+					</div>
+					</div>
+					<div class="column" >
+						<div class="divice-demo">
+							<img src="images/phone.png" width="50%" />
+						</div>
+					</div>
+				  </div> -->
+
+
+
+		<!-- <script>
+					
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 100) {
+	    $(".topnav").css("background-color" , "#333");
+	  }
+
+	 
+  })
+})
+				</script> -->
+
+
+
+		<!----features
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>FONCTIONNALITÉS<span class="second"> </span></h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+					</div>
+					<!----features-grids
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<span class="f-icon0"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<span class="f-icon1"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<span class="f-icon2"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+								
+							</div>
+							
+						</div> end-features-grid
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/divice.png" title="features-demo" />
+							</div>
+						</div> end-features-grid
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<span class="f-icon3"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<span class="f-icon4"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<span class="f-icon5"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+						</div>end-features-grid
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					//features-grids----->
+		<!----//features----->
+
+
+
+		<div class="clearfix"> </div>
+		<div class="splited">
+			<div class="split1">
+
+				<nav class="feat-nav">
+					<ul>
+						<li><button class="nav-btn" style="border: none; background: none ;" onclick="f1()">Gestion de compte</button></li>
+						<li><button class="nav-btn" style="border: none; background: none ;" onclick="f2()">Gestion des activités
+								sportives</button></li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f3()">Recherche des activités,
+								lieux et partenaires</button></li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f4()">Gestion de profil</button>
+						</li>
+						<li><button class="nav-btn" style="border: none; background: none ;" onclick="f5()">Gestion des flashs</button>
+						</li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f6()">Gestion des talks</button>
+						</li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f7()">Gestion de calendrier + des notifications</button>
+						</li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f8()">Gestion des IN et des OUT</button>
+						</li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f9()">Gestion automatique des dépenses caloriques</button>
+						</li>
+						<li><button  class="nav-btn" style="border: none; background: none ;" onclick="f10()">Gestion du covoiturage</button>
+						</li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f11()">Gestion des équipements sportifs</button>
+						</li>
+						<li><button class="nav-btn"  style="border: none; background: none ;" onclick="f12()">Gestion des abonnements</button>
+						</li>
+
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class="split2">
+				<div id="output" class="output"></div>
+
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			function f1() {
+				var data = document.getElementById('compte').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+
+			function f2() {
+				var data = document.getElementById('sportive').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+
+			function f3() {
+				var data = document.getElementById('recherche').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+
+			function f4() {
+				var data = document.getElementById('profil').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+
+			function f5() {
+				var data = document.getElementById('flash').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+
+			function f6() {
+				var data = document.getElementById('talks').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+
+			function f7() {
+				var data = document.getElementById('notif').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+			function f8() {
+				var data = document.getElementById('inout').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+			function f9() {
+				var data = document.getElementById('calorie').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+			function f10() {
+				var data = document.getElementById('covoiturage').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+			function f11() {
+				var data = document.getElementById('equipement').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+			function f12() {
+				var data = document.getElementById('abn').innerHTML;
+				document.getElementById("output").innerHTML = data;
+
+			}
+
+
+	
+		</script>
+
+
+		<div class="ft-text" id="compte">
+			<p><i class="fa-solid fa-angle-right"></i> Gérer les notifications</p>
+			<p><i class="fa-solid fa-angle-right"></i> Modifier le mot de passe</p>
+			<p><i class="fa-solid fa-angle-right"></i> Consulter les conditions générales</p>
+			<p><i class="fa-solid fa-angle-right"></i> Se déconnecter</p>
+		</div>
+
+		<div class="ft-text" id="sportive">
+			<p><i class="fa-solid fa-angle-right"></i> Trouver des partenaires sportifs près de chez soi en lançant une
+				recherche</p>
+			<p><i class="fa-solid fa-angle-right"></i> Inviter un player à jouer un match / se rencontrer</p>
+			<p><i class="fa-solid fa-angle-right"></i> Organiser des matchs amicaux avec un player</p>
+			<p><i class="fa-solid fa-angle-right"></i> Organiser des rencontre entre supporteurs (running, marche,
+				yoga...)</p>
+
+		</div>
+
+		<div class="ft-text" id="recherche">
+			<p><i class="fa-solid fa-angle-right"></i> Saisir le mot recherché et le lieu visé (ou utiliser la
+				géolocalisation) en précisant la catégorie (activité, lieu ou partenaire) afin de lancer une recherche
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Choisir la catégorie Activité pour participer à une activité, la
+				rajouter dans ses activités favorites, activer ses notifications, ou inviter un utilisateur afin de lui
+				rejoindre à l'activité</p>
+			<p><i class="fa-solid fa-angle-right"></i> Choisir la catégorie Partenaire afin de proposer des rencontres,
+				matchs et activités amicaux en invitant un utilisateur à être son partenaire dans une activité qui ne
+				doit pas être forcément présente dans l'application</p>
+			<p><i class="fa-solid fa-angle-right"></i> Choisir la catégorie Lieu pour rajouter un lieu à ses
+				installations favorites en activant ses alertes afin de recevoir les notifications des activités qui se
+				déroulent dans ces lieux</p>
+
+
+		</div>
+
+		<div class="ft-text" id="profil">
+			<p><i class="fa-solid fa-angle-right"></i> Modifier le profil (ajouter une photo, modifier la bio, le
+				pseudo)</p>
+			<p><i class="fa-solid fa-angle-right"></i> Consulter les profils des amis et les talks</p>
+			<p><i class="fa-solid fa-angle-right"></i> Rechercher un utilisateur </p>
+			<p><i class="fa-solid fa-angle-right"></i> Visualiser le profil</p>
+
+
+		</div>
+
+		<div class="ft-text" id="flash">
+			<p><i class="fa-solid fa-angle-right"></i> Visualiser le contenu média (flashs)</p>
+			<p><i class="fa-solid fa-angle-right"></i> Ajouter/Modifier/Supprimer un contenumédia</p>
+
+
+		</div>
+
+		<div class="ft-text" id="talks">
+			<p><i class="fa-solid fa-angle-right"></i> Afficher l'adminitrateur du groupe par son nom
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Régler l'affichage de la barre de recherche des amis et l'ajout
+				des amis et des autres utilisateurs
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Un seul talk public qui peut être créé à la fois par
+				l'utilisateur
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> L'utilisateur ne doit pas intégrer un talk qu'après sa
+				confirmation de rejointe
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> L'administrateur d'un talk public est le seul ayant la
+				possibilité d'envoyer du contenu média dans un talk privé, tout le monde peut partager
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Afficher correctement tous les talks créés et rejoints par
+				l'utilisateur
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Afficher correctement les discussions privées avec possibilité
+				d'y créer des conversations et régler le pop up des 3 points de paramétrage
+
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Afficher correctement le contenu média partagé en ayant la
+				possibilité de le quitter en cas de consultation
+
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Recevoir les notifications même lorsque le téléphone es ten
+				veilleuse
+
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Recevoir les notifications d'envoi des nouveaux messages dans les
+				talks
+
+				<p><i class="fa-solid fa-angle-right"></i> Ajouter les options de paramétrage du talk (quitter,
+					signaler, consulter les participants...)
+
+					<p><i class="fa-solid fa-angle-right"></i> Ajouter le nombre de notifications cumulé sur le logo de
+						l'application
+
+
+		</div>
+
+
+
+		<div class="ft-text" id="notif">
+			<p><i class="fa-solid fa-angle-right"></i> 		Consulter les dates prévues des matchs															
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Le calendrier doit rester figé après que l'utilisateur sélectionne un championnat															
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Recevoir les notifications d'une activité une fois marquée comme favorite															
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Recevoir les notifications d'une activité une fois créée par lui															
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> 		Recevoir les notifications d'une activité à laquelle il participera															
+												
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Recevoir les notifications des activités et covoiturages déroulant dans un lieu une fois ajouté dans les installations favorites															
+														
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Recevoir les notifications d'un trajet de covoiturage une fois créé par lui															
+														
+														
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Recevoir les notifications d'un trajet auquel il participera															
+															
+														
+			</p>
+			<p><i class="fa-solid fa-angle-right"></i> Consulter son calendrier qui marque tous ses dates importantes: ses activités et ses trajets.															
+														
+															
+														
+			</p>
+
+		</div>
+															
+															
+															
+															
+															
+															
+
+		<div class="ft-text" id="inout">
+			<p><i class="fa-solid fa-angle-right"></i> 		Utiliser l'appareil photo après la géoloclisation															</p>
+			<p><i class="fa-solid fa-angle-right"></i> Publier un contenu média															
+</p>
+			<p><i class="fa-solid fa-angle-right"></i> Visualiser les vidéos à la une d'un IN/OUT															
+</p>
+			<p><i class="fa-solid fa-angle-right"></i> Consulter/Ajouter un commentaire écrit ou vocal et interagir (clap) avec un contenu média															
+</p>
+<p><i class="fa-solid fa-angle-right"></i> Inviter des amis pour rejoindre les IN/OUT															
+															
+</p>
+<p><i class="fa-solid fa-angle-right"></i> Régler la qualité de lancement de l'audio en commentaire </p>
+<p><i class="fa-solid fa-angle-right"></i> Régler l'affichage de zone de texte et des commentaires </p>
+<p><i class="fa-solid fa-angle-right"></i> Régler la qualité des vidéos </p>
+<p><i class="fa-solid fa-angle-right"></i> Accélérer le chargement des posts </p>
+<p><i class="fa-solid fa-angle-right"></i> Activer uniquement la caméra IN du match choisi par l'utilisateur s'il est bien dans le stade après la géolocalisation et désactiver toutes les autres caméras </p>
+<p><i class="fa-solid fa-angle-right"></i> Activer toutes les caméras OUT de l'utilisateur s'il n'est pas dans le stade après la géolocalisation et désactiver toutes les autres caméras IN </p>
+<p><i class="fa-solid fa-angle-right"></i> Afficher les détails (nom du joueur et la minute) de changements des joueurs </p>
+
+
+		</div>
+
+		<div class="ft-text" id="calorie">
+			<p><i class="fa-solid fa-angle-right"></i> Afficher le nombre de calories depensées lors d'une activités quelconques</p>
+
+
+		</div>
+																
+														
+														
+														
+														
+
+		<div class="ft-text" id="covoiturage">
+			<p><i class="fa-solid fa-angle-right"></i> Ajouter un trajet de covoiturage en remplissant sa description, son point de départ et d'arrivée, le nombre maximum de personnes, le type de véhicule, les remarques et restrictions importantes</p>
+			<p><i class="fa-solid fa-angle-right"></i> Consulter les trajets ajoutées</p>
+			<p><i class="fa-solid fa-angle-right"></i> Modifier les trajets ajoutées au maxmum avant une journée de leurs dates de départ</p>
+			<p><i class="fa-solid fa-angle-right"></i> Participer à un trajet afin de se rendre au lieu d'une activité</p>
+			<p><i class="fa-solid fa-angle-right"></i> Activer les notifications pour un trajet</p>
+
+		</div>
+
+		<div class="ft-text" id="equipement">
+			<p><i class="fa-solid fa-angle-right"></i> Avoir la possibilité d'ajouter et de supprimer des équipements</p>
+		</div>
+																											
+																									
+																								
+																									
+																									
+																								
+																									
+
+		<div class="ft-text" id="abn">
+			<p><i class="fa-solid fa-angle-right"></i> Consulter les pass</p>
+			<p><i class="fa-solid fa-angle-right"></i> S'abonner à un pass en remplissant les informations nécessaires</p>
+			<p><i class="fa-solid fa-angle-right"></i> Effectuer le paiement mensuel (prélèvement automatique)	</p>
+			<p><i class="fa-solid fa-angle-right"></i> Se désabonner d'un pass</p>
+			<p><i class="fa-solid fa-angle-right"></i> IN/OUT illimités en proposant deux abonnements pour des clubs et des personnes</p>
+			<p><i class="fa-solid fa-angle-right"></i> Profiter d'un nombre limité d'accès aux IN et OUT dans la version gratuite	</p>
+			<p><i class="fa-solid fa-angle-right"></i> S'abonner au premier type d'abonnement Personne s'il n'est pas inscrit dans un club afin d'avoir un nombre illimité d'accès aux IN et OUT en payant mensuellement une somme</p>
+			<p><i class="fa-solid fa-angle-right"></i> S'abonner au deuxième type d'abonnement Club s'il est inscrit dans un club afin d'avoir un nombre illimité d'accès aux IN et OUT en réglant le payement avec un tarif préférentiel. Le club doit être impérativement inscrit dans Sporland et il bénéficiera d'un pourcentage de gain s'il incite un certain nombre de personnes à s'abonner à Sporkom</p>
+
+		</div>
+		<!-----footer----->
+		<!-- <div class="footer">
+				<div class="container">
+					<div class="footer-grids">
+						<div class="col-md-3 footer-grid about-info">
+							<a href="#"><img src="images/logo.png" title="Umbrella" /></a>
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="col-md-3 footer-grid subscribe">
+							<h3>Subscribe </h3>
+							<form>
+								<input type="text" placeholder="" required />
+								<input type="submit" value="" />
+							</form>
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</div>
+						<div class="col-md-3 footer-grid explore">
+							<h3>Explore</h3>
+							<ul class="col-md-6">
+								<li><a href="#">Envato</a></li>
+								<li><a href="#">Themecurve</a></li>
+								<li><a href="#">Kreativeshowcase</a></li>
+								<li><a href="#">Freebiescurve</a></li>
+							</ul>
+							<ul class="col-md-6">
+								<li><a href="#">Themeforest</a></li>
+								<li><a href="#">Microsoft</a></li>
+								<li><a href="#">Google</a></li>
+								<li><a href="#">Yahoo</a></li>
+							</ul>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-3 footer-grid copy-right">
+							<p>Eusmod tempor incididunt ut labore et dolore magna aliqua. ut labore et dolore magna aliqua. </p>
+							<p class="copy">Template by <a href="http://w3layouts.com/">w3layouts</a></p>
+						</div> -->
+		<div class="clearfix"> </div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+				};
+
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	</div>
+	</div>
+	<!---//footer----->
+
+</body>
+
+</html>

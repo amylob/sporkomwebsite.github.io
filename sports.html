@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+     <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+     <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    </script>
+    <!----webfonts---->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+    <!----//webfonts---->
+    <!----start-top-nav-script---->
+    <script>
+        $(function() {
+            var pull 		= $('#pull');
+                menu 		= $('nav ul');
+                menuHeight	= menu.height();
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <!----//End-top-nav-script---->
+
+</head>
+<body >
+    <div class="listesection">
+    <div class="listheader">
+        <div class="topnav" id="myTopnav">
+            <a class="nav-logo" href="index.html">SPORKOM</a>
+
+					<a href="contact.html">Contacter Nous</a>
+                    <a href="equipe.html">L'équipe</a>
+
+					<div class="drop">
+					  <button class="dropbtn">Esprit Sporkom 
+						<i class="fa fa-caret-down"></i>
+					  </button>
+
+					  <div class="dropdown-content">
+						<a href="featurespage.html">Fonctionnalités</a>
+						<a href="users.html">Utilisateurs</a>
+						<a href="community.html">Communauté</a>
+						<a href="sports.html">Liste des sports</a>
+						<a href="signup.html">S'inscrire ou créer un compte</a>
+						<a href="featured.html">Ils parlent de nous</a>
+						<a href="#footer">Aides et accompagenements
+						</a>
+
+                </div>
+            </div>
+            <a href="index.html">Acceuil</a>
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+
+    <div class="listheader-title">
+    <h2>Liste Des Sports</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the first is simply dummy text of the printing and typesetting industry</p>
+</div>
+
+</div>
+    <div class="sides">
+        <!-- <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+                        </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+    </div>
+
+    <div class="sides">
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+                <img src="images/sam-moghadam-khamseh-HYDUXzWSF5I-unsplash.jpg" alt="" srcset="" width="100%">
+
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+   -->
+        <div class="left-side">
+            <h3>Découvrir +30 sports sur notre application, et profitez de regarder vos équipes préférées maintenant. </h3>
+            <p><i class="fa-solid fa-angle-right"></i> Aikido</p>
+            <p><i class="fa-solid fa-angle-right"></i> Aviron</p>
+            <p><i class="fa-solid fa-angle-right"></i> Basketball</p>
+            <p><i class="fa-solid fa-angle-right"></i> Baseball</p>
+            <p><i class="fa-solid fa-angle-right"></i> Badminton</p>
+            <p><i class="fa-solid fa-angle-right"></i> Bowling</p>
+            <p><i class="fa-solid fa-angle-right"></i> Beach Soccer</p>
+            <p><i class="fa-solid fa-angle-right"></i> Beach Volley</p>
+            <p><a href="index.html">+30 à découvrir sur l'application...</a></p>
+
+        </div>
+
+        <div class="right-side">
+            <img src="images/rightphone2.png" alt="" srcset="">
+
+        </div>
+
+
+
+
+        </div>
+    </div>
+
+    
+
+    <!-- <button onclick="plus();" class="plus-btn" id="plusbtn">Découvrir plus</button> -->
+
+    <script type="text/javascript">
+        function plus() {
+            document.getElementById("plusbtn").style.display = "none";
+            document.getElementById("hidden-side").style.display = "flex";
+
+            document.getElementById("plusbtn").style.display = "none";
+            document.getElementById("hidden-side2").style.display = "flex";
+        }
+    </script>
+
+    <div  id="hidden-side" class="hidden-side">
+        <div class="side-one">
+            <div class="card-icon">
+                <i class="fa-solid fa-uniform-martial-arts"></i>
+            </div>
+            <div class="card-info">
+                <h3>Aikido </h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+    </div>
+
+    <div class="hidden-side" id="hidden-side2">
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+
+        <div class="side-one">
+            <div class="card-icon">
+
+            </div>
+            <div class="card-info">
+                <h3>Aikido</h3>
+            </div>
+  
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
